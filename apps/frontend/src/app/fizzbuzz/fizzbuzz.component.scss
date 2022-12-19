@@ -1,0 +1,23 @@
+.next-button-container {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fizzbuzz-list {
+  padding: 8px;
+}
+
+.list-item-container {
+  width: 100%;
+  display: flex;
+}
+
+.list-item {
+  width: 50%;
+}
+
+.even {
+  background-color: lightgray;
+}

@@ -1,0 +1,27 @@
+<div>
+
+  <div class="next-button-container">
+    <button mat-button
+            color="accent"
+            (click)="onNextButtonClick()"
+            mat-raised-button>
+      Next
+    </button>
+  </div>
+
+  <mat-list class="fizzbuzz-list">
+    <mat-list-item *ngFor="let entry of (data$ | async); let last = last; let index = index"
+                   [ngClass]="{'even': index % 2 === 0}">
+      <div class="list-item-container">
+        <div class="list-item">
+          {{entry.value}}
+        </div>
+        <div class="list-item" *ngIf="entry.result !== fizzbuzz.NONE">
+          {{entry.result}}
+        </div>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</div>
+
+
